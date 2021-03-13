@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="style.css">-->
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+        .container {
+            background-color: white;
+        }
+        
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <div class="jumbotron text-center">
+
+        <p>
+            <strong>HTML</strong> <i>HyperText Markup Language</i> <strong>COURSE</strong>
+        </p>
+
+        <p>
+            <b>Sarting Time</b><br> 11:00
+            <sub>am</sub> 8:00<sub>pm</sub>
+        </p>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+
+            <!--This is to show the classes time-->
+
+            <div class="col-sm-6">
+                <img src="web.jpg" alt="web" height="100%" width="100%">
+                <table>
+                    <caption>Lecture Schedule</caption>
+                    <tr>
+                        <td>Sunday</td>
+                        <th>11:00 - 8:00</th>
+                    </tr>
+
+                    <tr>
+                        <td>Monday</td>
+                        <th>11:00 - 8:00</th>
+                    </tr>
+
+                    <tr>
+                        <td>Tusday</td>
+                        <th>11:00 - 8:00</th>
+                    </tr>
+
+                    <tr>
+                        <td>Wedneday</td>
+                        <th>11:00 - 8:00</th>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <th>11:00 - 8:00</th>
+                    </tr>
+
+                </table>
+            </div>
+
+
+            <!--This is where a student can regesiter his information-->
+            <div class="col-sm-6">
+                <form>
+                    <label for="name">User Name</label>
+                    <input type="text" id="name">
+
+                    <p>Gander</p>
+
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="fmale" name="gender">
+                    <label for="fmale">Female</label>
+
+                    <p>How did you hear about us:</p>
+
+                    <input type="checkbox" id="friend" name="friend">
+                    <label for="friend">Friend</label><br>
+
+                    <input type="checkbox" id="job bord" name="job bord">
+                    <label for="job bord">Job Bord</label><br>
+
+                    <input type="checkbox" id="soical media" name="soical media">
+                    <label for="soical media">Soical Media</label><br>
+
+                    <select id="city" name="city">
+            <option value="Riyadh">Riyadh</option>
+            <option value="Jaddh">Jaddah</option>
+            <option value="Dammam">Dammam</option>
+        </select><br><br>
+
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
